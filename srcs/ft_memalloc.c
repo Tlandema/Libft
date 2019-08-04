@@ -6,7 +6,7 @@
 /*   By: tlandema <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 17:28:32 by tlandema          #+#    #+#             */
-/*   Updated: 2019/06/10 05:44:55 by tlandema         ###   ########.fr       */
+/*   Updated: 2019/08/04 16:20:41 by tlandema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,8 @@ void	*ft_memalloc(size_t size)
 {
 	void	*s;
 
-	s = NULL;
 	if (size == 0)
-		return (s);
+		return (NULL);
 	if (!(s = (void*)malloc(size)))
 		return (NULL);
 	ft_bzero(s, size);
