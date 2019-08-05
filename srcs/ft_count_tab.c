@@ -6,7 +6,7 @@
 /*   By: tlandema <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/04 10:51:48 by tlandema          #+#    #+#             */
-/*   Updated: 2019/08/04 16:07:52 by tlandema         ###   ########.fr       */
+/*   Updated: 2019/08/05 14:53:37 by tlandema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_count_tab(char **tab)
 	int i;
 
 	i = 0;
-	if (tab)
+	if (!tab)
 		return (0);
 	while (tab[i])
 		i++;
