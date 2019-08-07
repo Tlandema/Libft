@@ -6,7 +6,7 @@
 /*   By: tlandema <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:04:57 by tlandema          #+#    #+#             */
-/*   Updated: 2019/08/05 15:02:45 by tlandema         ###   ########.fr       */
+/*   Updated: 2019/08/07 09:58:10 by tlandema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,7 @@ void				ft_putchar(char c);
 void				ft_putstr(char const *s);
 void				ft_putendl(char const *s);
 void				ft_putnbr(int n);
+void				ft_putnbr_base(int n, char *str);
 void				ft_print_tab(char **tab);
 
 void				ft_putchar_fd(char c, int fd);

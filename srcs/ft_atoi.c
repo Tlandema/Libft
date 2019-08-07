@@ -6,7 +6,7 @@
 /*   By: tlandema <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/05 08:14:00 by tlandema          #+#    #+#             */
-/*   Updated: 2019/08/04 15:29:33 by tlandema         ###   ########.fr       */
+/*   Updated: 2019/08/07 10:00:58 by tlandema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,13 @@ int		ft_atoi(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		num = num * 10 + (str[i] - '0') * neg;
+		num = num * 10 + (str[i] - '0');
 		if (num > 0 && neg == -1)
 			return (0);
 		if (num < 0 && neg == 1)
 			return (-1);
 		i++;
 	}
+	num *= neg;
 	return ((int)num);
 }

@@ -6,7 +6,7 @@
 #    By: tlandema <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 12:04:00 by tlandema          #+#    #+#              #
-#    Updated: 2019/08/04 15:23:48 by tlandema         ###   ########.fr        #
+#    Updated: 2019/08/07 09:58:28 by tlandema         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ INC = includes
 SRCS_PATH = srcs
 
 SRCS = get_next_line.c \
+	   ft_putnbr_base.c \
 	   ft_stristr.c \
 	   ft_str_join.c \
 	   ft_atoli.c \
